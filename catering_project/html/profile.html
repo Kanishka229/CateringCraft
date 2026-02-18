@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CateringCraft</title>
+  <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+     <div class="logo">
+    <img src="/img/chef-hat-svgrepo-com.svg" >
+    <a href="/html/index.html">CateringCraft</a>
+  </div>
+    <nav class="main-nav">
+      <a href="/html/menu.html">Menu</a>
+      <a href="/html/reserve.html">Reserve</a>
+    </nav>
+  </div>
+
+  <div class="nav-right">
+    <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="/html/login.html"><i class="fa-solid fa-user"></i></a>
+  </div>
+</header>
+
+ <div class="profile-container">
+    <h2>My Profile</h2>
+
+    <!-- User Info -->
+    <div class="user-info">
+      <p><strong>Name:</strong> <span id="userName"></span></p>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="profile-actions" >
+      <button onclick="goToOrders()">My Orders</button>
+      <button onclick="goToReservations()">My Reservations</button>
+    </div>
+    <div class="profile-actions"> <button class="logout-btn" onclick="logout()">Logout</button></div>
+
+    <!-- Orders List -->
+    <h3>My Orders</h3>
+    <div id="ordersContainer" ></div>
+
+    <!-- Reservations List -->
+    <h3>My Reservations</h3>
+    <div id="reservationsContainer" ></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="toast" class="toast"></div>
+
+
+
+<footer>
+  
+    <div class="footer-left"> <h1><img src="/img/chef-hat-svgrepo-com.svg"> <span>CateringCraft</span></h1> </div>
+
+    <div class="footer-center"> © 2026 CateringCraft. All rights reserved.</div>
+    <div class="footer-right">
+      <img src="/img/twitter-svgrepo-com.svg" >
+    <img src="/img/facebook-boxed-svgrepo-com.svg" >
+    <img src="/img/instagram-167-svgrepo-com.svg" >
+    </div>
+  </footer>
+  <script type="module" src="/js/profile.js"></script>
+
+</body>
+</html>

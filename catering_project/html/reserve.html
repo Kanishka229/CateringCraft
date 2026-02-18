@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reservation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/reserve.css">
+<link rel="stylesheet" href="/css/toast.css">
+</head>
+<body>
+  
+<!-- header -->
+<header class="navbar">
+  <div class="nav-left">
+     <div class="logo">
+    <img src="/img/chef-hat-svgrepo-com.svg" >
+    <a href="/html/index.html">CateringCraft</a>
+  </div>
+
+    <nav class="main-nav">
+      <a href="/html/menu.html">Menu</a>
+      <a class="active" href="/html/reserve.html">Reserve</a>
+    </nav>
+  </div>
+
+  <div class="nav-right">
+    <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="/html/profile.html"><i class="fa-solid fa-user"></i></a>
+  </div>
+</header>
+
+
+<section class="reserve-wrapper">
+  <div class="reserve-card">
+
+    <h2>Reserve Your Date</h2>
+    <p class="subtitle">
+      Tell us about your event. Fill out the form below to begin the catering process.
+    </p>
+
+    <form id="reservationForm">
+
+      <div class="grid">
+        <div>
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+
+        <div>
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="(555) 555-5555" required>
+        </div>
+
+        <div>
+          <label>Number of Guests</label>
+          <input type="number" id="guests" min="1" required>
+        </div>
+
+        <div>
+          <label>Event Date</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div>
+          <label>Event Time (24h format)</label>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+
+      <div>
+        <label>Event Location / Address</label>
+        <input type="text" id="location" placeholder="123 Celebration Ave, Fun Town" required>
+      </div>
+
+     <div class="btn-wrap">
+       <button type="submit" class="submit-btn">Request Reservation</button>
+     </div>
+    </form>
+
+  </div>
+</section>
+
+<div id="toast" class="toast"></div>
+
+  <footer>
+  
+    <div class="footer-left"> <h1><img src="/img/chef-hat-svgrepo-com.svg"> <span>CateringCraft</span></h1> </div>
+
+    <div class="footer-center"> © 2026 CateringCraft. All rights reserved.</div>
+    <div class="footer-right">
+      <img src="/img/twitter-svgrepo-com.svg" >
+    <img src="/img/facebook-boxed-svgrepo-com.svg" >
+    <img src="/img/instagram-167-svgrepo-com.svg" >
+    </div>
+  </footer>
+  <!-- <script type="module" src="/js/auth-check.js"></script> -->
+<script type="module" src="/js/rerserve.js"></script>
+<script type="module" src="/js/index.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

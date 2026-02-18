@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Admin Dashboard</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="admin-dash.css">
+
+</head>
+
+<body>
+  <div class="admin-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+         <h2 class="logo"><img src="/img/chef-hat-svgrepo-com.svg" height="25px">CateringCraft</h2>
+
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin-reservation.html">Reservations</a>
+        <a href="admin-order.html">orders</a>
+        <a href="/html/index.html" id="logoutBtn">Logout</a>
+        
+      </nav>
+    </aside>
+
+    <div class="dashboard">
+
+
+      <div class="cards">
+
+
+        <div class="card">
+          <h3>Total Menu Items</h3>
+          <p id="totalMenu"></p>
+        </div>
+
+        <div class="card">
+          <h2>Total Orders</h2>
+          <p id="totalOrders">0</p>
+        </div>
+
+        <div class="card">
+          <h2>Total Reservations</h2>
+          <p id="totalReservations">0</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Total Revenue</h3>
+        <p id="totalRevenue">₹0</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+    <!-- <h2>Recent Orders</h2>
+    <div id="ordersContainer"></div> -->
+
+    <!-- <button id="logoutBtn">Logout</button> -->
+
+
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>

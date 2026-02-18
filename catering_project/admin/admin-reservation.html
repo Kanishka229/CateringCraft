@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | Reservations</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="admin-reserve.css">
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+      <h2 class="logo"><img src="/img/chef-hat-svgrepo-com.svg" height="25px">CateringCraft</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="menu.html">Menu</a>
+    <a class="active" href="admin-reservation.html">Reservations</a>
+     <a href="admin-order.html">orders</a>
+   <a href="/html/index.html" id="logoutBtn">Logout</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="content">
+    <h1>Reservation Requests</h1>
+
+    <div id="reservations" class="reservation-list"></div>
+  </main>
+
+</div>
+
+<script type="module" src="/admin/admin-reserve.js"></script>
+</body>
+</html>

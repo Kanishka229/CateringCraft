@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Menu | CateringCraft</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/admin/admin-menu.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<div class="admin-container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+       <h2 class="logo"><img src="/img/chef-hat-svgrepo-com.svg" height="25px">CateringCraft</h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="admin-reservation.html">Reservations</a>
+       <a href="admin-order.html">orders</a>
+   <a href="/html/index.html" id="logoutBtn">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="top-bar">
+      <h1>Menu Management</h1>
+      <button id="openForm">+ Add Dish</button>
+    </div>
+
+    <!-- Add Dish Form -->
+    
+<div id="formBox" class="form hidden">
+  <h2>Add New Dish</h2>
+
+  <div class="form-grid">
+    <input id="name" placeholder="Dish Name">
+    <input id="price" type="number" placeholder="Price">
+    <!-- <input id="category" placeholder="Category (Appetizer, Main)"> -->
+    <input id="image" placeholder="Image URL">
+  </div>
+
+  <textarea id="description" placeholder="Dish Description"></textarea>
+    <select id="category">
+    <option value="appetizer">Appetizer</option>
+    <option value="main">Main</option>
+    <option value="dessert">Dessert</option>
+    <option value="drink">Drink</option>
+  </select>
+
+  <button onclick="addDish()">Add Dish</button>
+
+</div> 
+    <!-- Menu List -->
+     <h2>Menu Items</h2>
+   
+<div class="menu-grid"></div>
+<!-- <div id="menuList" class="menu-grid"></div> -->
+
+<script type="module" src="/admin/menu.js"></script>
+</body>
+</html>

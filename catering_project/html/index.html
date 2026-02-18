@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CateringCraft</title>
+  <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+     <div class="logo">
+    <img src="/img/chef-hat-svgrepo-com.svg" >
+    <span>CateringCraft</span>
+  </div>
+
+    <nav class="main-nav">
+      <a href="/html/menu.html">Menu</a>
+      <a href="/html/reserve.html">Reserve</a>
+    </nav>
+  </div>
+
+  <div class="nav-right">
+    <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="/html/profile.html"><i class="fa-solid fa-user"></i></a>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+  <h1>Exquisite Flavors, Unforgettable Events</h1>
+  <p>From corporate functions to intimate gatherings</p>
+  <!-- <button class="primary-btn">Explore Our Menu</button> -->
+     <a href="/html/menu.html" class="btn-primary">Explore Our Menu →</a>
+     </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+  <h2>Catering Made Simple</h2>
+
+  <div class="steps-grid">
+    <div class="step-card">
+       <img src="/img/fork-and-knife-meal-2-svgrepo-com.svg" width="50px">
+      <h3>1. Choose Your Menu</h3>
+      <p>Browse and add your favorite dishes</p>
+    </div>
+
+    <div class="step-card">
+       <img src="/img/calender-svgrepo-com.svg" width="50px">
+      <h3>2. Book Your Date</h3>
+      <p>Select event date and location</p>
+    </div>
+
+    <div class="step-card">
+       <img src="/img/party-popper-svgrepo-com (2).svg" width="50px">
+      <h3>3. Enjoy Your Event</h3>
+      <p>Relax while we serve perfection</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAN FAVORITES -->
+<section class="favorites">
+  <h2>Fan Favorites</h2>
+  <p>Discover the dishes our clients love the most.</p>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1610472487806-36e3f7bca240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcHBldGl6ZXIlMjBwbGF0dGVyfGVufDB8fHx8MTc2MzcwMTQwMnww&ixlib=rb-4.1.0&q=80&w=1080">
+      <div class="menu-info">
+        <h3>Bruschetta Assortment</h3>
+        <p>Toasted baguette with tomato basil topping</p>
+        <span>$12.00</span>
+    <button onclick="addToCart(
+  'Bruschetta Assortment',
+  12,
+  'images/bruschetta.jpg'
+)">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://www.primaverakitchen.com/wp-content/uploads/2024/07/Caprese-Skewers-9-1200x1799.jpg">
+      <div class="menu-info">
+        <h3>Caprese Skewers</h3>
+        <p>Fresh mozzarella, cherry tomatoes</p>
+        <span>$10.00</span>
+<button onclick="addToCart(
+  'Caprese Skewers',
+  10,
+  'images/bruschetta.jpg'
+)">Add to Order</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1641898378716-1f38ec04bb0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmlsbGVkJTIwc2FsbW9ufGVufDB8fHx8MTc2MzYxMTU0NXww&ixlib=rb-4.1.0&q=80&w=1080">
+      <div class="menu-info">
+        <h3>Grilled Salmon</h3>
+        <p>Perfectly grilled salmon with herbs</p>
+        <span>$28.00</span>
+       <button onclick="addToCart(
+  'Grilled Salmon',
+  28,
+  'images/bruschetta.jpg'
+)">Add to Order</button>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="/html/menu.html" class="view-menu-btn">View Full Menu →</a>
+</section>
+
+<!-- cta -->
+ <section class="cta">
+    <h2>Ready to Plan Your Next Event?</h2>
+    <p>Let’s craft an unforgettable culinary experience together.</p>
+    <a href="/html/reserve.html" class="btn-primary">Request a Reservation</a>
+    <!-- <button class="btn-primary"> <a href="/html/reserve.html">Request a Reservation</a></button> -->
+  </section>
+<!-- footer -->
+
+  <footer>
+  
+    <div class="footer-left"> <h1><img src="/img/chef-hat-svgrepo-com.svg"> <span>CateringCraft</span></h1> </div>
+
+    <div class="footer-center"> © 2026 CateringCraft. All rights reserved.
+      <p>Crafting memorable events with exceptional flavors.</p>
+    </div>
+
+
+    <div class="footer-right">
+      <img src="/img/twitter-svgrepo-com.svg" >
+    <img src="/img/facebook-boxed-svgrepo-com.svg" >
+    <img src="/img/instagram-167-svgrepo-com.svg" >
+    </div>
+  </footer>
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js"></script>
+
+<script src="js/firebase.js"></script>
+<!-- <script type="module" src="/js/index.js"></script>
+<script type="module" src="/js/auth-check.js"></script> -->
+
+</body>
+</html>
